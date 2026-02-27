@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pankaj Dnyaneshwar Mule | Sr. Linux Administrator</title>
+    <meta name="description"
+        content="Portfolio of Pankaj Dnyaneshwar Mule – Sr. Linux Administrator with 4+ years of experience at Citius BPO India Private Limited." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ───── PARTICLE CANVAS ───── -->
+    <canvas id="particles"></canvas>
+
+    <!-- ───── NAVBAR ───── -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="brand-bracket">&lt;</span>PDM<span class="brand-bracket">/&gt;</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-link active" id="nav-hero">Home</a></li>
+            <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+            <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+            <li><a href="#experience" class="nav-link" id="nav-experience">Experience</a></li>
+            <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+            <li><a href="company.html" class="nav-link" id="nav-company">Company</a></li>
+            <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ───── HERO ───── -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Pankaj Dnyaneshwar Mule</h1>
+            <div class="hero-title-wrap">
+                <span class="hero-title-prefix">$&gt;&nbsp;</span>
+                <span class="hero-title-typed" id="typed-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-intro">
+                Passionate Linux professional securing, optimising, and scaling critical
+                infrastructure for enterprise environments at
+                <strong>Citius BPO India Private Limited</strong>.
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary" id="hire-btn">Hire Me</a>
+                <a href="#projects" class="btn btn-ghost" id="projects-btn">View Work</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-value">4+</span>
+                    <span class="stat-label">Years Exp.</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-card">
+                    <span class="stat-value">50+</span>
+                    <span class="stat-label">Servers Managed</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-card">
+                    <span class="stat-value">99.9%</span>
+                    <span class="stat-label">Uptime SLA</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="terminal-window">
+                <div class="terminal-bar">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="terminal-title">pankaj@citius-bpo:~</span>
+                </div>
+                <div class="terminal-body" id="terminal-body">
+                    <p><span class="t-user">pankaj@citius</span><span class="t-at">:</span><span
+                            class="t-path">~</span><span class="t-sym">$</span> whoami</p>
+                    <p class="t-out">Sr. Linux Administrator</p>
+                    <p><span class="t-user">pankaj@citius</span><span class="t-at">:</span><span
+                            class="t-path">~</span><span class="t-sym">$</span> uptime</p>
+                    <p class="t-out">4+ years, load average: always_high, never_down</p>
+                    <p><span class="t-user">pankaj@citius</span><span class="t-at">:</span><span
+                            class="t-path">~</span><span class="t-sym">$</span> cat skills.txt</p>
+                    <p class="t-out">RHEL · Ubuntu · CentOS · Docker · AWS · Bash</p>
+                    <p><span class="t-user">pankaj@citius</span><span class="t-at">:</span><span
+                            class="t-path">~</span><span class="t-sym">$</span> systemctl status career</p>
+                    <p class="t-out"><span class="t-green">●</span> career.service – Active (running)</p>
+                    <p class="t-out">&nbsp;&nbsp;&nbsp;Since: 2020; Passionate: yes</p>
+                    <p class="t-blink"><span class="t-user">pankaj@citius</span><span class="t-at">:</span><span
+                            class="t-path">~</span><span class="t-sym">$</span> <span class="cursor-sm">▋</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── ABOUT ───── -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">About <span class="accent">Me</span></h2>
+            <div class="about-grid">
+                <div class="about-avatar-wrap">
+                    <div class="avatar-ring">
+                        <div class="avatar-inner">
+                            <span class="avatar-initials">PDM</span>
+                        </div>
+                    </div>
+                    <div class="badge-floating">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                        Certified Linux Pro
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Who I Am</h3>
+                    <p>
+                        I'm <strong>Pankaj Dnyaneshwar Mule</strong>, a seasoned <strong>Senior Linux
+                            Administrator</strong>
+                        with over <strong>4 years of hands-on experience</strong> managing complex server ecosystems,
+                        automating workflows, and ensuring rock-solid system reliability for business-critical services.
+                    </p>
+                    <p>
+                        Currently employed at <strong>Citius BPO India Private Limited</strong>, I oversee the
+                        administration, security hardening, and performance optimisation of Linux-based infrastructure
+                        that powers day-to-day BPO operations — zero tolerance for downtime.
+                    </p>
+                    <p>
+                        I believe in <em>automation-first</em> thinking: if a task is repeated more than twice,
+                        it deserves a Bash or Python script. My goal is always to deliver maximum uptime with
+                        minimum manual intervention.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item"><span class="info-label">Name</span><span class="info-val">Pankaj
+                                Dnyaneshwar Mule</span></div>
+                        <div class="info-item"><span class="info-label">Role</span><span class="info-val">Sr. Linux
+                                Administrator</span></div>
+                        <div class="info-item"><span class="info-label">Company</span><span class="info-val">Citius BPO
+                                India Pvt. Ltd.</span></div>
+                        <div class="info-item"><span class="info-label">Experience</span><span class="info-val">4+
+                                Years</span></div>
+                        <div class="info-item"><span class="info-label">Location</span><span
+                                class="info-val">India</span></div>
+                        <div class="info-item"><span class="info-label">Availability</span><span class="info-val"><span
+                                    class="dot-green"></span> Open to Opportunities</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── SKILLS ───── -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+            <p class="section-sub">Tools and technologies I work with every day</p>
+
+            <div class="skills-categories">
+
+                <div class="skill-category">
+                    <h3 class="cat-title"><span class="cat-icon">🐧</span> Linux & OS</h3>
+                    <div class="skill-tags">
+                        <span class="tag">RHEL 7/8/9</span>
+                        <span class="tag">CentOS</span>
+                        <span class="tag">Ubuntu 20/22 LTS</span>
+                        <span class="tag">Debian</span>
+                        <span class="tag">Rocky Linux</span>
+                        <span class="tag">AlmaLinux</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="cat-title"><span class="cat-icon">⚙️</span> Administration</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item"><span>System Administration</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="--pct:95%"></div>
+                            </div><span class="pct">95%</span>
+                        </div>
+                        <div class="skill-bar-item"><span>User & Access Management</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="--pct:92%"></div>
+                            </div><span class="pct">92%</span>
+                        </div>
+                        <div class="skill-bar-item"><span>Disk / LVM Management</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="--pct:90%"></div>
+                            </div><span class="pct">90%</span>
+                        </div>
+                        <div class="skill-bar-item"><span>Network Configuration</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="--pct:88%"></div>
+                            </div><span class="pct">88%</span>
+                        </div>
+                        <div class="skill-bar-item"><span>Security Hardening</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="--pct:87%"></div>
+                            </div><span class="pct">87%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="cat-title"><span class="cat-icon">🔧</span> Tools & Automation</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Bash Scripting</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Ansible</span>
+                        <span class="tag">Cron Jobs</span>
+                        <span class="tag">Nagios</span>
+                        <span class="tag">Grafana</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">Vim / Nano</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="cat-title"><span class="cat-icon">☁️</span> Cloud & Virtualisation</h3>
+                    <div class="skill-tags">
+                        <span class="tag">AWS EC2</span>
+                        <span class="tag">AWS S3</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">VMware ESXi</span>
+                        <span class="tag">KVM</span>
+                        <span class="tag">VirtualBox</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="cat-title"><span class="cat-icon">🔒</span> Security & Networking</h3>
+                    <div class="skill-tags">
+                        <span class="tag">iptables / firewalld</span>
+                        <span class="tag">SELinux</span>
+                        <span class="tag">SSL/TLS</span>
+                        <span class="tag">SSH Hardening</span>
+                        <span class="tag">TCP/IP</span>
+                        <span class="tag">DNS / DHCP</span>
+                        <span class="tag">NFS / Samba</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="cat-title"><span class="cat-icon">🗄️</span> Services & Daemons</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Apache / Nginx</span>
+                        <span class="tag">MySQL / MariaDB</span>
+                        <span class="tag">FTP / SFTP</span>
+                        <span class="tag">Postfix (Mail)</span>
+                        <span class="tag">Rsyslog</span>
+                        <span class="tag">OpenLDAP</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── EXPERIENCE ───── -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item active-job">
+                    <div class="timeline-dot pulse"></div>
+                    <div class="timeline-card">
+                        <div class="tcard-header">
+                            <div>
+                                <h3 class="job-title">Sr. Linux Administrator</h3>
+                                <p class="company">Citius BPO India Private Limited</p>
+                            </div>
+                            <span class="job-badge current">Current</span>
+                        </div>
+                        <p class="job-period">📅 2022 – Present &nbsp;·&nbsp; 3+ Years</p>
+                        <ul class="job-duties">
+                            <li>Manage and maintain 50+ Linux servers (RHEL, Ubuntu, CentOS) in a 24×7 production BPO
+                                environment.</li>
+                            <li>Automated routine sysadmin tasks using Bash and Python scripts, reducing manual effort
+                                by ~40%.</li>
+                            <li>Implemented Ansible playbooks for configuration management and zero-touch server
+                                provisioning.</li>
+                            <li>Performed security audits, applied OS patches, and enforced SELinux policies and
+                                firewall rules.</li>
+                            <li>Managed LVM storage expansion and NFS file shares for high-availability workloads.</li>
+                            <li>Set up and maintained monitoring dashboards (Nagios + Grafana) achieving 99.9% uptime
+                                SLA.</li>
+                            <li>Coordinated with network and application teams for seamless CI/CD pipeline deployments.
+                            </li>
+                            <li>Provided L2/L3 technical support and mentored junior sysadmins.</li>
+                        </ul>
+                        <div class="job-tech">
+                            <span class="tech-pill">RHEL</span><span class="tech-pill">Ubuntu</span>
+                            <span class="tech-pill">Ansible</span><span class="tech-pill">Docker</span>
+                            <span class="tech-pill">Bash</span><span class="tech-pill">Nagios</span>
+                            <span class="tech-pill">AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="tcard-header">
+                            <div>
+                                <h3 class="job-title">Linux System Administrator</h3>
+                                <p class="company">Previous Organisation</p>
+                            </div>
+                        </div>
+                        <p class="job-period">📅 2020 – 2022 &nbsp;·&nbsp; 2 Years</p>
+                        <ul class="job-duties">
+                            <li>Installed, configured, and maintained Linux servers across development and staging
+                                environments.</li>
+                            <li>Managed user accounts, file permissions, SSH keys, and sudo policies.</li>
+                            <li>Configured Apache/Nginx web servers and MySQL databases for internal applications.</li>
+                            <li>Wrote Bash scripts for automated backups, log rotation, and health-check alerts.</li>
+                            <li>Assisted in migrating on-premise workloads to AWS EC2 instances.</li>
+                        </ul>
+                        <div class="job-tech">
+                            <span class="tech-pill">CentOS</span><span class="tech-pill">Debian</span>
+                            <span class="tech-pill">Apache</span><span class="tech-pill">MySQL</span>
+                            <span class="tech-pill">Bash</span><span class="tech-pill">AWS EC2</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── PROJECTS ───── -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <h2 class="section-title">Key <span class="accent">Projects</span></h2>
+            <p class="section-sub">Real-world infrastructure solutions I've designed and deployed</p>
+
+            <div class="projects-grid">
+
+                <div class="project-card" id="proj-1">
+                    <div class="proj-icon">🖥️</div>
+                    <h3>Zero-Touch Server Provisioning</h3>
+                    <p>Built an Ansible-based automated provisioning pipeline that deploys fully hardened Linux servers
+                        in under 10 minutes — OS, packages, firewall rules, and monitoring agents included.</p>
+                    <div class="proj-tags">
+                        <span>Ansible</span><span>RHEL</span><span>Bash</span><span>Git</span>
+                    </div>
+                </div>
+
+                <div class="project-card" id="proj-2">
+                    <div class="proj-icon">📊</div>
+                    <h3>Centralised Monitoring Stack</h3>
+                    <p>Designed and deployed a Nagios + Grafana stack monitoring 50+ servers with custom dashboards,
+                        real-time alerting via email/SMS, and automated incident ticketing.</p>
+                    <div class="proj-tags">
+                        <span>Nagios</span><span>Grafana</span><span>Bash</span><span>Python</span>
+                    </div>
+                </div>
+
+                <div class="project-card" id="proj-3">
+                    <div class="proj-icon">🔒</div>
+                    <h3>Security Hardening Framework</h3>
+                    <p>Developed a company-wide Linux security-hardening checklist and Ansible role covering CIS
+                        Benchmark controls, SSH hardening, SELinux enforcement, and automated vulnerability scans.</p>
+                    <div class="proj-tags">
+                        <span>SELinux</span><span>Ansible</span><span>iptables</span><span>OpenSCAP</span>
+                    </div>
+                </div>
+
+                <div class="project-card" id="proj-4">
+                    <div class="proj-icon">☁️</div>
+                    <h3>AWS Infrastructure Migration</h3>
+                    <p>Spearheaded the lift-and-shift migration of 15 on-premise Linux servers to AWS EC2, configuring
+                        VPCs, security groups, IAM roles, and S3 backup policies with zero data loss.</p>
+                    <div class="proj-tags">
+                        <span>AWS EC2</span><span>S3</span><span>VPC</span><span>IAM</span>
+                    </div>
+                </div>
+
+                <div class="project-card" id="proj-5">
+                    <div class="proj-icon">💾</div>
+                    <h3>Automated Backup & DR System</h3>
+                    <p>Implemented a multi-tier backup solution using rsync + cron for daily incremental backups to NFS
+                        and weekly full backups to AWS S3 Glacier, cutting RPO from 24h to 4h.</p>
+                    <div class="proj-tags">
+                        <span>rsync</span><span>Cron</span><span>S3 Glacier</span><span>NFS</span>
+                    </div>
+                </div>
+
+                <div class="project-card" id="proj-6">
+                    <div class="proj-icon">🐳</div>
+                    <h3>Docker Containerisation Initiative</h3>
+                    <p>Containerised 8 legacy internal applications using Docker, reducing deployment time by 60% and
+                        eliminating "works on my machine" issues across dev/staging/prod environments.</p>
+                    <div class="proj-tags">
+                        <span>Docker</span><span>Docker Compose</span><span>Nginx</span><span>RHEL</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── CONTACT ───── -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+            <p class="section-sub">Have a project or opportunity? Let's connect.</p>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-card" id="contact-email">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <p class="contact-label">Email</p>
+                            <a href="mailto:pankajmuley.10688@gmail.com"
+                                class="contact-val">pankajmuley.10688@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card" id="contact-phone">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <p class="contact-label">Phone</p>
+                            <a href="tel:+918208922241" class="contact-val">+91 82089 22241</a>
+                        </div>
+                    </div>
+                    <div class="contact-card" id="contact-location">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <p class="contact-label">Location</p>
+                            <span class="contact-val">India</span>
+                        </div>
+                    </div>
+                    <div class="contact-card" id="contact-linkedin">
+                        <div class="contact-icon">🔗</div>
+                        <div>
+                            <p class="contact-label">LinkedIn</p>
+                            <a href="#" class="contact-val">linkedin.com/in/pankaj-mule</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Collaboration" />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="Tell me about your project or opportunity..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="send-btn">Send Message ✈️</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── FOOTER ───── -->
+    <footer class="footer">
+        <p>Designed &amp; Built by <strong>Pankaj Dnyaneshwar Mule</strong></p>
+        <p class="footer-sub">Sr. Linux Administrator · Citius BPO India Private Limited · © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

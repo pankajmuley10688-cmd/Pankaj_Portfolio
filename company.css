@@ -1,0 +1,584 @@
+/* ═══════════════════════════════════════════════
+   company.css – Citius BPO Page Specific Styles
+   ═══════════════════════════════════════════════ */
+
+/* ── Company Hero ── */
+.company-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6%;
+    padding: 110px 8% 70px;
+    position: relative;
+    z-index: 1;
+    background:
+        radial-gradient(ellipse 70% 60% at 5% 50%, rgba(124, 58, 237, 0.13) 0%, transparent 60%),
+        radial-gradient(ellipse 55% 50% at 95% 45%, rgba(0, 212, 255, 0.09) 0%, transparent 60%);
+}
+
+.company-hero-content {
+    flex: 1;
+    max-width: 620px;
+}
+
+.company-tag {
+    display: inline-block;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0.35rem 1rem;
+    border-radius: 50px;
+    margin-bottom: 1.2rem;
+    animation: fadeSlideUp 0.6s ease both;
+}
+
+.company-hero-title {
+    font-size: clamp(2rem, 4.5vw, 3.4rem);
+    font-weight: 800;
+    line-height: 1.15;
+    background: linear-gradient(135deg, #ffffff 30%, var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.2rem;
+    animation: fadeSlideUp 0.7s 0.1s ease both;
+}
+
+.company-hero-sub {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    max-width: 540px;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    animation: fadeSlideUp 0.7s 0.2s ease both;
+}
+
+.company-hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    animation: fadeSlideUp 0.7s 0.3s ease both;
+}
+
+.badge-chip {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    padding: 0.45rem 1rem;
+    border-radius: 50px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    transition: border-color var(--transition), color var(--transition);
+}
+
+.badge-chip:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* ── Company Logo Hex ── */
+.company-hero-logo-wrap {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeSlideUp 0.8s 0.25s ease both;
+}
+
+.logo-hex {
+    width: 240px;
+    height: 240px;
+    background: linear-gradient(135deg, var(--accent2), var(--accent));
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 60px rgba(0, 212, 255, 0.3);
+    animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.logo-hex-inner {
+    width: 210px;
+    height: 210px;
+    background: var(--bg-primary);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.logo-abbr {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1;
+    background: linear-gradient(135deg, var(--accent2), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.logo-full {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--text-muted);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* ── Address Grid ── */
+.address-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 2rem;
+    margin-top: 3rem;
+    align-items: start;
+}
+
+.address-main-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2.2rem;
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.address-main-card:hover {
+    border-color: var(--border-hover);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.addr-icon-wrap {
+    margin-bottom: 1.5rem;
+}
+
+.addr-main-icon {
+    font-size: 3rem;
+}
+
+.address-main-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.addr-line {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 0.5rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    align-items: start;
+}
+
+.addr-line:last-child {
+    border-bottom: none;
+}
+
+.addr-label {
+    font-size: 0.73rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    font-weight: 600;
+    padding-top: 2px;
+}
+
+.addr-val {
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* ── Map Placeholder ── */
+.map-placeholder {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color var(--transition);
+}
+
+.map-placeholder:hover {
+    border-color: var(--border-hover);
+}
+
+.map-placeholder::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        repeating-linear-gradient(0deg, rgba(0, 212, 255, 0.03) 0px, rgba(0, 212, 255, 0.03) 1px, transparent 1px, transparent 40px),
+        repeating-linear-gradient(90deg, rgba(0, 212, 255, 0.03) 0px, rgba(0, 212, 255, 0.03) 1px, transparent 1px, transparent 40px);
+}
+
+.map-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.map-pin-anim {
+    position: relative;
+    margin-bottom: 0.8rem;
+}
+
+.map-pin {
+    font-size: 2.8rem;
+    display: block;
+}
+
+.map-ripple {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: map-ripple 2.4s ease-out infinite;
+}
+
+.map-ripple.r1 {
+    width: 50px;
+    height: 50px;
+    animation-delay: 0s;
+}
+
+.map-ripple.r2 {
+    width: 80px;
+    height: 80px;
+    animation-delay: 0.6s;
+}
+
+.map-ripple.r3 {
+    width: 110px;
+    height: 110px;
+    animation-delay: 1.2s;
+}
+
+.map-label {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.map-sublabel {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.map-btn {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    padding: 0.6rem 1.4rem;
+}
+
+/* ── Company About Grid ── */
+.company-about-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+    margin: 2.5rem 0 2rem;
+}
+
+.company-stat-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.company-stat-box:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cstat-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 0.4rem;
+}
+
+.cstat-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.company-about-text {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+}
+
+.company-about-text p {
+    color: var(--text-secondary);
+    font-size: 0.96rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.company-about-text p:last-child {
+    margin-bottom: 0;
+}
+
+.company-about-text strong {
+    color: var(--text-primary);
+}
+
+/* ── Working Grid ── */
+.working-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.working-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.working-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent2), var(--accent));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--transition);
+}
+
+.working-card:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-4px);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.3);
+}
+
+.working-card:hover::after {
+    transform: scaleX(1);
+}
+
+.wc-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.working-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+    color: var(--text-primary);
+}
+
+.working-card p {
+    font-size: 0.86rem;
+    color: var(--text-secondary);
+    line-height: 1.75;
+}
+
+/* ── Infra Timeline ── */
+.infra-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+.infra-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent2), var(--accent3));
+}
+
+.infra-item {
+    position: relative;
+}
+
+.infra-dot {
+    position: absolute;
+    left: -2.9rem;
+    top: 1.3rem;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--bg-primary);
+    box-shadow: 0 0 10px var(--glow);
+}
+
+.infra-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem 1.8rem;
+    transition: var(--transition);
+}
+
+.infra-card:hover {
+    border-color: var(--border-hover);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.infra-card h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.infra-card p {
+    font-size: 0.87rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* ── CTA Section ── */
+.cta-section {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.12), rgba(0, 212, 255, 0.08));
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.cta-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.cta-container h2 {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 800;
+}
+
+.cta-container p {
+    color: var(--text-secondary);
+    max-width: 500px;
+    font-size: 0.95rem;
+}
+
+.cta-btn-wrap {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cta-btn {
+    margin: 0 0.4rem;
+}
+
+/* ── Keyframes ── */
+@keyframes pulse-glow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 40px rgba(0, 212, 255, 0.25);
+    }
+
+    50% {
+        box-shadow: 0 0 80px rgba(0, 212, 255, 0.5);
+    }
+}
+
+@keyframes map-ripple {
+    0% {
+        opacity: 0.6;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+    .company-hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .company-hero-badges {
+        justify-content: center;
+    }
+
+    .address-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .company-about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 540px) {
+    .company-about-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .working-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-hex {
+        width: 180px;
+        height: 180px;
+    }
+
+    .logo-hex-inner {
+        width: 155px;
+        height: 155px;
+    }
+
+    .logo-abbr {
+        font-size: 2.5rem;
+    }
+}
